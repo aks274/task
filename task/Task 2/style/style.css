@@ -1,0 +1,167 @@
+﻿body{
+	background: #ffffff; 
+	color: black;
+	font-family: Roboto;
+	margin: 0;
+}
+
+#wrapper {
+	max-width: 960px;
+	margin: auto;
+}
+
+
+/* Карточки */
+
+figure {
+	margin: auto;
+	margin-top: 1.5rem;
+	margin-bottom: 3rem;
+}
+
+.row {
+	display: flex;
+	margin-bottom: 10px;
+}
+
+
+.block {
+	background-color: #ffffff;
+	color: black;
+	padding: 1.5rem;
+	overflow: hidden;
+	max-width: 230px;
+	width: 50%;
+	text-align: center;
+}
+
+.block .block-img {
+	height: 250px;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: -1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+figure h3{
+	font-family: "Roboto";
+	font-weight: 900;
+	font-size: 2rem;
+	margin: 0;
+	margin-bottom: .5rem;
+}
+
+figure h4{
+	font-weight: 100;
+	font-size: 1rem;
+	margin: 0;
+}
+
+figure img{
+	width: 50%;
+	object-fit: cover;
+}
+
+
+/* Кнопка */
+
+.block > a > [name="buy-button"]{
+	border-radius: 15px;
+	padding: 7px;
+	background: #f13c6e;
+	border-style: hidden;
+	color: #ffffff;
+	font-size: 13px;
+	cursor: pointer;
+	transition: background .7s;
+	width: 50%;
+}
+
+.block > a > [name="buy-button"]:hover{
+	background: #4e4e4e;
+	color: #ffffff;
+	transition: background .7s;
+}
+
+/* Модальное окно */
+
+#modal{
+	max-width: 480px;
+	margin: auto;
+	position: absolute;
+	background: #f5f5f5;
+	color: black;
+	padding: 1.5rem;
+	overflow: hidden;
+	width: 50%;
+	text-align: center;
+	display: none;
+	top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+	height: 50%;
+	border-radius: 10px;
+	box-shadow: 0 0 2px rgba(0,0,0,0.5);
+}
+
+#modal:target{
+	display: block;
+	}
+
+.hide {
+	text-decoration: none;
+	position: absolute;
+	right: 5%;
+	bottom: 92%;
+	font-size: 1.5rem;
+}	
+
+form[id="user-data"] > [type="text"]{
+	margin-top: 1.5rem;
+	margin-right: .5rem;
+	width: 70%;
+	resize: none;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	font-family: Roboto;
+	padding: .5rem;
+	box-shadow: 0 0 1px rgba(0,0,0,0.5);
+}
+
+form[id="user-data"] > [name="mail"]{
+	margin-top: 1.5rem;
+	margin-right: .5rem;
+	width: 70%;
+	resize: none;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	font-family: Roboto;
+	padding: .5rem;
+	box-shadow: 0 0 1px rgba(0,0,0,0.5);
+}
+
+form[id="user-data"] > [name="send-data"]{
+	border-radius: 15px;
+	padding: 7px;
+	background: #f13c6e;
+	border-style: hidden;
+	color: #ffffff;
+	font-size: 13px;
+	cursor: pointer;
+	transition: background .7s;
+	width: 50%;
+}
+
+form[id="user-data"] > [name="send-data"]:hover{
+	background: #4e4e4e;
+	color: #ffffff;
+	transition: background .7s;
+}
+
+mark {
+	font-size: 2rem;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang = "ru">
+<head>
+	<meta charset = "UTF-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+	<title>Карточки</title>
+	<link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+	<div id="wrapper">
+		<figure>
+			<div class="row">
+				<div class="block">
+					<div class = "block-img" style = "background-image: url(style/pic.jpg);"></div>
+					<h4>Парикхмахерское кресло "Норм" гидравлическое</h4>
+					</br>
+					<h3>9 900 &#x20bd;</h3>
+					<a href = "#modal"><input type="button" name="buy-button" value="Купить"></a>
+				</div>
+				<div class="block">
+					<div class = "block-img" style = "background-image: url(style/pic.jpg);"></div>
+					<h4>Парикхмахерское кресло "Норм" гидравлическое</h4>
+					</br>
+					<h3>9 900 &#x20bd;</h3>
+					<a href = "#modal"><input type="button" name="buy-button" value="Купить"></a>
+				</div>
+				<div class="block">
+					<div class = "block-img" style = "background-image: url(style/pic.jpg);"></div>
+					<h4>Парикхмахерское кресло "Норм" гидравлическое</h4>
+					</br>
+					<h3>9 900 &#x20bd;</h3>
+					<a href = "#modal"><input type="button" name="buy-button" value="Купить"></a>
+				</div>
+				<div class="block">
+					<div class = "block-img" style = "background-image: url(style/pic.jpg);"></div>
+					<h4>Парикхмахерское кресло "Норм" гидравлическое</h4>
+					</br>
+					<h3>9 900 &#x20bd;</h3>
+					<a href = "#modal"><input type="button" name="buy-button" value="Купить"></a>
+				</div>
+			</div>	
+		</figure>
+	</div>
+	<div id="modal">
+		<a href="#" class = "hide">x</a>
+		<h2>Оформить заказ</h2>
+		<form action="send.php" method="post" id="user-data">
+			<input type="text" name="name" placeholder="Имя" required>
+			<input type="text" name="phone" placeholder="Телефон" required>
+			<input type="email" name="mail" placeholder="E-mail" required>
+			<h4>Парикхмахерское кресло "Норм" гидравлическое</h4>
+			<input type="hidden" name="product" value='Парикхмахерское кресло "Норм" гидравлическое'/>
+			<input type="submit" name = "send-data">
+		</form>
+	</div>
+</body>
+</html>
